@@ -37,7 +37,7 @@ client_data = label_skewed_split(num_clients=8, X=X, y=y)
 
 # check the number of samples assigned to each client
 for i, (X_c, y_c) in enumerate(client_data):
-    print(f"Client {i} - X: {X.shape}, y: {y.shape}")
+    print(f"Client {i} - X: {X_c.shape}, y: {y_c.shape}")
 ```
 
 We provide an [example notebook](https://github.com/archettialberto/federated_survival_datasets/blob/main/example/example_usage.ipynb) to illustrate the proposed algorithms.
